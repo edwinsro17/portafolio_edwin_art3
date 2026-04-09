@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Rodríguez | Arte Hiperrealista en B/N</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ed-black': '#000000',
+                        'ed-gray-light': '#E8E8E8',
+                        'ed-gray-mid': '#808080',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 antialiased selection:bg-black selection:text-white">
+
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#" class="text-xl md:text-2xl font-black tracking-tighter text-ed-black uppercase">EDWIN_ART3</a>
+                
+                <div class="hidden md:flex space-x-8 lg:space-x-10 text-xs font-bold tracking-widest uppercase text-ed-gray-mid">
+                    <a href="#inicio" class="hover:text-ed-black transition-colors">Inicio</a>
+                    <a href="#galeria" class="hover:text-ed-black transition-colors">Galería</a>
+                    <a href="#servicios" class="hover:text-ed-black transition-colors">Servicios</a>
+                    <a href="#contacto" class="hover:text-ed-black transition-colors">Contacto</a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-ed-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="flex flex-col px-6 py-4 space-y-4 text-xs font-bold tracking-widest uppercase text-ed-gray-mid">
+                <a href="#inicio" class="hover:text-ed-black transition-colors mobile-link">Inicio</a>
+                <a href="#galeria" class="hover:text-ed-black transition-colors mobile-link">Galería</a>
+                <a href="#servicios" class="hover:text-ed-black transition-colors mobile-link">Servicios</a>
+                <a href="#contacto" class="hover:text-ed-black transition-colors mobile-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="pt-28 md:pt-40 pb-16 md:pb-20 px-6 lg:px-10 max-w-7xl mx-auto min-h-screen flex items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center w-full">
+            
+            <div class="space-y-8 md:space-y-10 text-center lg:text-left">
+                <h1 class="text-5xl sm:text-6xl md:text-8xl font-black tracking-tight leading-none uppercase text-ed-black">
+                    Alto <br class="hidden sm:block"> <span class="text-ed-gray-light">Contraste.</span>
+                </h1>
+                <p class="text-base sm:text-lg md:text-xl text-ed-gray-mid max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Especialista en dibujo realista. Transformo fotografías y conceptos en piezas de arte con un nivel de detalle excepcional, utilizando únicamente la escala de grises.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+                    <a href="#galeria" class="bg-black text-white text-center px-8 py-4 text-xs font-bold uppercase tracking-widest border border-black hover:bg-gray-800 transition-colors w-full sm:w-auto">
+                        Ver Obras
+                    </a>
+                    <a href="#contacto" class="border border-black text-black text-center px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-gray-50 transition-colors w-full sm:w-auto">
+                        Solicitar Retrato
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-gray-0 aspect-[4/5] sm:aspect-[5/6] w-full max-w-md mx-auto lg:max-w-lg flex items-center justify-center overflow-hidden">
+                <span class="text-sm font-light text-ed-gray-mid"><img src="assets/img/artista.png" alt="Imagen Principal" class="w-full h-full object-cover"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="galeria" class="py-20 md:py-32 bg-gray-50 px-6 lg:px-10">
+        <div class="max-w-7xl mx-auto space-y-12 md:space-y-24">
+            <h2 class="text-2xl sm:text-3xl font-black text-ed-black uppercase tracking-tighter text-center md:text-left">Obras Seleccionadas</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 lg:gap-x-16 gap-y-12 md:gap-y-20 md:border-l border-gray-200 md:pl-10">
+                
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_1.png" alt="Mirada Infinita - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">Mirada Infinita</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito sobre papel - Estudio de luz.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_2.png" alt="El Guardián del Silencio - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">Guardián del Silencio</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito sobre papel - Técnica de texturizado.</p>
+                </div>
+
+                <div class="group cursor-pointer">      
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_3.png" alt="La Verdad Oculta - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">Verdad Oculta</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito de alto contraste - Obra conceptual.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_4.png" alt="Eternidad Dorada - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">Marilyn Monroe</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito fotorrealista - Retrato de icono.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_5.png" alt="El Alba de la Sonrisa - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">El Alba de la Sonrisa</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito sobre papel - Detalle en texturas.</p>
+                </div>
+
+                <div class="group cursor-pointer">
+                    <div class="bg-gray-200 aspect-square sm:aspect-[3/4] overflow-hidden mb-4 md:mb-6 relative">
+                        <div class="absolute inset-0 bg-gray-300 flex items-center justify-center text-gray-500 group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                            <img src="assets/img/obra_6.png" alt="La Esencia del Alma - Edwin Rodriguez" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-bold text-ed-black uppercase tracking-wide">La Esencia del Alma</h3>
+                    <p class="text-ed-gray-mid font-light text-xs md:text-sm">Grafito - Retrato personalizado.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 md:py-32 px-6 lg:px-10">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl font-black text-ed-black uppercase tracking-tighter mb-12 md:mb-20 text-center md:text-left">Servicios</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-x-12 md:gap-y-16 items-start">
+                
+                <div class="bg-gray-50 p-8 md:p-10 space-y-4 border-l-2 border-black">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-ed-black">Retratos</h3>
+                    <p class="font-light text-ed-gray-mid text-sm leading-relaxed">
+                        Creación de retratos fotorrealistas a partir de fotografías. Ideal para regalos únicos y piezas de colección.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 md:p-10 space-y-4 border-l-2 border-black">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-ed-black">Arte</h3>
+                    <p class="font-light text-ed-gray-mid text-sm leading-relaxed">
+                        Obras originales y fotorrealismo de autor en formato medio y grande.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 md:p-10 space-y-4 border-l-2 border-black">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-ed-black">Asesoría</h3>
+                    <p class="font-light text-ed-gray-mid text-sm leading-relaxed">
+                        Colaboraciones y asesoría técnica para proyectos que requieran el dominio del claroscuro.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 md:py-32 bg-black text-white px-6 lg:px-10">
+        <div class="max-w-4xl mx-auto text-center space-y-10 md:space-y-12">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tighter">Hablemos.</h2>
+            <p class="text-gray-400 mb-8 md:mb-10 font-light text-base md:text-lg px-4">
+                Para cotizaciones de retratos personalizados o consultas sobre mi obra disponible.
+            </p>
+            <a href="https://wa.me/573054240082?text=Hola%20Edwin,%20estoy%20interesado%20en%20cotizar%20un%20retrato." target="_blank" class="inline-block bg-white text-black w-full sm:w-auto px-12 py-5 text-sm font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors">
+                Enviar un mensaje
+            </a>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-bold tracking-widest uppercase border-t border-gray-800 pt-8 mt-16 md:mt-24 space-y-4 md:space-y-0">
+                <span>&copy; <span id="year"></span> EDWIN RODRÍGUEZ.</span>
+                <span>Candelaria, Valle del Cauca.</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
